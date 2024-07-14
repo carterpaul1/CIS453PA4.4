@@ -1,0 +1,43 @@
+.add-button {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 8px;
+	border-radius: 25px;
+	font-size: 18px;
+}
+
+.save-button {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 8px;
+	border-radius: 25px;
+	font-size: 18px;
+}
+
+.delete-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 8px;
+	border-radius: 25px;
+	font-size: 18px;
+}
+
+.edit-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-right: 8px;
+	border-radius: 25px;
+	font-size: 18px;
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5; /* Optional: reduce opacity for completed tasks */
+}
