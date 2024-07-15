@@ -13,12 +13,7 @@ function TodoList() {
 
     function handleSubmit() {
         if (inputValue.trim()) {
-            const newTodo = {
-                text: inputValue.trim(),
-                completed: false,
-                createdAt: new Date().toLocaleString()  // Add createdAt property with current date and time
-            };
-            setTodos([...todos, newTodo]);
+            setTodos([...todos, { text: inputValue.trim(), completed: false }]);
             setInputValue('');
         }
     }
@@ -67,7 +62,6 @@ function TodoList() {
                         ) : (
                             <>
                                 <span className="todo-text">{todo.text}</span>
-                                <span className="todo-created-at">{todo.createdAt}</span>  {/* Display createdAt time */}
                                 {!todo.completed && (
                                     <div className="button-container">
                                         <button className="delete-button" onClick={() => handleDelete(index)}>Delete</button>
@@ -84,7 +78,6 @@ function TodoList() {
 }
 
 export default TodoList;
-
 
 
 
